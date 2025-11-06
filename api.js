@@ -146,6 +146,8 @@ app.get("/filtros/:id/predecir", async (req,res)=>{
         const respuestaML = await axios.post(ML_SERVICE_URL, {
             ph: ph,
             tds: tds
+        }, { 
+            timeout: 90000  // <-- AÑADE ESTO
         });
 
         // --- C. Devolver la predicción al usuario ---
@@ -166,6 +168,7 @@ app.get("/filtros/:id/predecir", async (req,res)=>{
         }
     }
 })
+
 
 
 
