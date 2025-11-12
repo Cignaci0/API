@@ -174,5 +174,4 @@ app.post("/captura", async (req, res) => {
    }
 })
 
-})
 
