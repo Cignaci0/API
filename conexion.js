@@ -35,3 +35,4 @@ export async function getconeccion(){
 export {mssql}
 
 // este es el archivo de conexion, sirve para poder conectarse con la base de datos
+
