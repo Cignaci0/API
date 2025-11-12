@@ -123,6 +123,7 @@ app.get("/filtros/:id/predecir", async (req,res)=>{
         console.error("Error en el endpoint de predicción:", error.message)
         res.status(500).json({error: "Error al obtener preddicion"})
     }
+});
 
     //Obtener las lecturas por cada filtro (para graficos)
 app.get("/filtros/:id/lecturas",async(req,res)=>{
@@ -174,3 +175,4 @@ app.post("/captura", async (req, res) => {
 })
 
 })
+
